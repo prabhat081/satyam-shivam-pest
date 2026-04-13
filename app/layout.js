@@ -1,15 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Script from "next/script";
 
 export const metadata = {
   title: "Create Next App",
@@ -18,8 +7,59 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+    <html lang="en">
+      <head>
+        {/* Google Fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+
+        {/* CSS */}
+        <link href="/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/css/slicknav.min.css" rel="stylesheet" />
+        <link href="/css/swiper-bundle.min.css" rel="stylesheet" />
+        <link href="/css/all.min.css" rel="stylesheet" />
+        <link href="/css/animate.css" rel="stylesheet" />
+        <link href="/css/magnific-popup.css" rel="stylesheet" />
+        <link href="/css/mousecursor.css" rel="stylesheet" />
+        <link href="/css/custom.css" rel="stylesheet" />
+      </head>
+
+      <body>
+        {children}
+
+        {/* ✅ jQuery FIRST */}
+        <Script src="/js/jquery-3.7.1.min.js" strategy="beforeInteractive" />
+
+        {/* ✅ Core Plugins */}
+        <Script src="/js/bootstrap.min.js" strategy="beforeInteractive" />
+        <Script src="/js/validator.min.js" strategy="beforeInteractive" />
+        <Script src="/js/jquery.slicknav.js" strategy="beforeInteractive" />
+        <Script src="/js/swiper-bundle.min.js" strategy="beforeInteractive" />
+
+        {/* ✅ Counter dependencies */}
+        <Script src="/js/jquery.waypoints.min.js" strategy="beforeInteractive" />
+        <Script src="/js/jquery.counterup.min.js" strategy="beforeInteractive" />
+
+        {/* ✅ WOW FIX (IMPORTANT) */}
+        <Script src="/js/wow.min.js" strategy="beforeInteractive" />
+
+        {/* ✅ Other plugins */}
+        <Script src="/js/jquery.magnific-popup.min.js" strategy="beforeInteractive" />
+        <Script src="/js/SmoothScroll.js" strategy="beforeInteractive" />
+        <Script src="/js/parallaxie.js" strategy="beforeInteractive" />
+        <Script src="/js/gsap.min.js" strategy="beforeInteractive" />
+        <Script src="/js/magiccursor.js" strategy="beforeInteractive" />
+        <Script src="/js/SplitText.min.js" strategy="beforeInteractive" />
+        <Script src="/js/ScrollTrigger.min.js" strategy="beforeInteractive" />
+        <Script src="/js/jquery.mb.YTPlayer.min.js" strategy="beforeInteractive" />
+
+        {/* ✅ MAIN JS (LAST) */}
+        <Script src="/js/function.js" strategy="afterInteractive" />
+      </body>
     </html>
   );
 }
