@@ -12796,3 +12796,64 @@ header.main-header .header-sticky.active{
         width: 14px;
     }
 }
+
+
+/* ================================
+   Floating WhatsApp / Call Buttons
+================================ */
+
+.floating-contact-wrapper {
+    position: fixed !important;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99999 !important;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  
+    /* IMPORTANT FIX */
+    transform: none !important;
+    will-change: transform;
+  }
+  
+  /* Button base */
+  .floating-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  /* Hover animation */
+  .floating-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+  }
+  
+  /* WhatsApp */
+  .floating-btn.whatsapp {
+    background: #25d366;
+  }
+  
+  /* Call */
+  .floating-btn.call {
+    background: #2563eb;
+  }
+  
+  /* Mobile spacing */
+  @media (max-width: 768px) {
+    .floating-contact-wrapper {
+      right: 14px;
+      bottom: 14px;
+    }
+  }
+  
