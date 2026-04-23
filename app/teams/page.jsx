@@ -41,7 +41,7 @@ function page() {
             <div className="page-team">
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-3 col-md-6">
+                        <div className="col-xl-4 col-md-6">
                             {/* Team Item Start */}
                             <div className="team-item wow fadeInUp">
                                 <div className="team-item-image">
@@ -51,13 +51,13 @@ function page() {
                                         data-cursor-text="View"
                                     >
                                         <figure>
-                                            <img src="images/team-1.jpg" alt="" />
+                                            <img src="/images/ceo.jpeg" alt="" />
                                         </figure>
                                     </a>
                                 </div>
                                 <div className="team-item-content">
                                     <h2>
-                                        <a href="#">Courtney Henry</a>
+                                        <a href="#">Shambhu Kumar</a>
                                     </h2>
                                     <p>Chief Pest Control Officer</p>
                                 </div>
@@ -88,7 +88,7 @@ function page() {
                             </div>
                             {/* Team Item End */}
                         </div>
-                        <div className="col-xl-3 col-md-6">
+                        <div className="col-xl-4 col-md-6">
                             {/* Team Item Start */}
                             <div className="team-item wow fadeInUp" data-wow-delay="0.2s">
                                 <div className="team-item-image">
@@ -98,15 +98,15 @@ function page() {
                                         data-cursor-text="View"
                                     >
                                         <figure>
-                                            <img src="images/team-2.jpg" alt="" />
+                                            <img src="images/director.jpeg" alt="director" />
                                         </figure>
                                     </a>
                                 </div>
                                 <div className="team-item-content">
                                     <h2>
-                                        <a href="#">Shambhu Kumar</a>
+                                        <a href="#">Rekha Kumari</a>
                                     </h2>
-                                    <p>Founder & Pest Control Specialist</p>
+                                    <p>Sales Mangaer</p>
                                 </div>
                                 <div className="team-social-list">
                                     <ul>
@@ -135,7 +135,7 @@ function page() {
                             </div>
                             {/* Team Item End */}
                         </div>
-                        <div className="col-xl-3 col-md-6">
+                        <div className="col-xl-4 col-md-6">
                             {/* Team Item Start */}
                             <div className="team-item wow fadeInUp" data-wow-delay="0.4s">
                                 <div className="team-item-image">
@@ -145,250 +145,15 @@ function page() {
                                         data-cursor-text="View"
                                     >
                                         <figure>
-                                            <img src="images/team-3.jpg" alt="" />
+                                            <img src="images/techinican.jpeg" alt="techinican" />
                                         </figure>
                                     </a>
                                 </div>
                                 <div className="team-item-content">
                                     <h2>
-                                        <a href="#">Rekha Kumari</a>
+                                        <a href="#">Rajkapoor Kumar</a>
                                     </h2>
-                                    <p>Customer Support & Service Manager</p>
-                                </div>
-                                <div className="team-social-list">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-pinterest-p" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-x-twitter" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-facebook-f" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-instagram" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* Team Item End */}
-                        </div>
-                        <div className="col-xl-3 col-md-6">
-                            {/* Team Item Start */}
-                            <div className="team-item wow fadeInUp" data-wow-delay="0.6s">
-                                <div className="team-item-image">
-                                    <a
-                                        href="#"
-                                        className="image-anime"
-                                        data-cursor-text="View"
-                                    >
-                                        <figure>
-                                            <img src="images/team-4.jpg" alt="" />
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div className="team-item-content">
-                                    <h2>
-                                        <a href="#">Rajesh Kumar</a>
-                                    </h2>
-                                    <p>Senior Pest Control Technician</p>
-                                </div>
-                                <div className="team-social-list">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-pinterest-p" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-x-twitter" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-facebook-f" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-instagram" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* Team Item End */}
-                        </div>
-                        <div className="col-xl-3 col-md-6">
-                            {/* Team Item Start */}
-                            <div className="team-item wow fadeInUp" data-wow-delay="0.8s">
-                                <div className="team-item-image">
-                                    <a
-                                        href="#"
-                                        className="image-anime"
-                                        data-cursor-text="View"
-                                    >
-                                        <figure>
-                                            <img src="images/team-5.jpg" alt="" />
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div className="team-item-content">
-                                    <h2>
-                                        <a href="#">Jane Cooper</a>
-                                    </h2>
-                                    <p>Chief Pest Control Officer</p>
-                                </div>
-                                <div className="team-social-list">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-pinterest-p" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-x-twitter" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-facebook-f" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-instagram" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* Team Item End */}
-                        </div>
-                        <div className="col-xl-3 col-md-6">
-                            {/* Team Item Start */}
-                            <div className="team-item wow fadeInUp" data-wow-delay="1s">
-                                <div className="team-item-image">
-                                    <a
-                                        href="#"
-                                        className="image-anime"
-                                        data-cursor-text="View"
-                                    >
-                                        <figure>
-                                            <img src="images/team-6.jpg" alt="" />
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div className="team-item-content">
-                                    <h2>
-                                        <a href="#">Ralph Edwards</a>
-                                    </h2>
-                                    <p>Senior Technician</p>
-                                </div>
-                                <div className="team-social-list">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-pinterest-p" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-x-twitter" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-facebook-f" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-instagram" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* Team Item End */}
-                        </div>
-                        <div className="col-xl-3 col-md-6">
-                            {/* Team Item Start */}
-                            <div className="team-item wow fadeInUp" data-wow-delay="1.2s">
-                                <div className="team-item-image">
-                                    <a
-                                        href="#"
-                                        className="image-anime"
-                                        data-cursor-text="View"
-                                    >
-                                        <figure>
-                                            <img src="images/team-7.jpg" alt="" />
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div className="team-item-content">
-                                    <h2>
-                                        <a href="#">Robert Fox</a>
-                                    </h2>
-                                    <p>Commercial Pest Controls</p>
-                                </div>
-                                <div className="team-social-list">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-pinterest-p" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-x-twitter" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-facebook-f" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-brands fa-instagram" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* Team Item End */}
-                        </div>
-                        <div className="col-xl-3 col-md-6">
-                            {/* Team Item Start */}
-                            <div className="team-item wow fadeInUp" data-wow-delay="1.4s">
-                                <div className="team-item-image">
-                                    <a
-                                        href="#"
-                                        className="image-anime"
-                                        data-cursor-text="View"
-                                    >
-                                        <figure>
-                                            <img src="images/team-8.jpg" alt="" />
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div className="team-item-content">
-                                    <h2>
-                                        <a href="#">Devon Lane</a>
-                                    </h2>
-                                    <p>Eco-Friendly Pest Specialist</p>
+                                    <p>Techican</p>
                                 </div>
                                 <div className="team-social-list">
                                     <ul>

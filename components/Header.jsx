@@ -49,8 +49,8 @@ function Header() {
                             </div>
                             {/* Header Btn Start */}
                             <div className="header-btn">
-                                <a href="contact.html" className="btn-default btn-highlighted">
-                                    Start Free Trial
+                                <a href="/contact-us" className="btn-default btn-highlighted">
+                                    Book Service Now
                                 </a>
                             </div>
                             {/* Header Btn End */}

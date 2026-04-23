@@ -1,6 +1,34 @@
 import React from 'react'
+import { notFound } from "next/navigation";
 
-function page() {
+import services from "@/data/services.json";
+import Link from 'next/link';
+import Image from 'next/image';
+/* ✅ SEO */
+export async function generateMetadata({ params }) {
+    const { slug } = await params;
+    const service = services.find((s) => s.slug === slug);
+
+    if (!service) return {};
+
+    return {
+        title: service.seo.title,
+        description: service.seo.description,
+    };
+}
+
+/* ✅ STATIC PATH */
+export async function generateStaticParams() {
+    return services.map((s) => ({
+        slug: s.slug,
+    }));
+}
+
+async function page({ params }) {
+    const { slug } = await params;
+    const service = services.find((s) => s.slug === slug);
+
+    if (!service) return notFound();
     return (
         <>
             {/* Page Header Section Start */}
@@ -11,18 +39,18 @@ function page() {
                             {/* Page Header Box Start */}
                             <div className="page-header-box">
                                 <h1 className="text-anime-style-3" data-cursor="-opaque">
-                                    Bed bug treatment
+                                    {service.title}
                                 </h1>
                                 <nav className="wow fadeInUp">
                                     <ol className="breadcrumb">
                                         <li className="breadcrumb-item">
-                                            <a href="./">home</a>
+                                            <Link href="/">Home</Link>
                                         </li>
                                         <li className="breadcrumb-item">
-                                            <a href="services.html">services</a>
+                                            <Link href="/services">Services</Link>
                                         </li>
                                         <li className="breadcrumb-item active" aria-current="page">
-                                            Bed bug treatment
+                                            {service.title}
                                         </li>
                                     </ol>
                                 </nav>
@@ -44,21 +72,13 @@ function page() {
                                 <div className="page-category-list wow fadeInUp">
                                     <h2 className="page-category-list-title">Explore Our Services</h2>
                                     <ul>
-                                        <li>
-                                            <a href="#">Residential Pest Control</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Cockroach &amp; Ant Control</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Termite Control</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Rodent Control</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">General Pest Control</a>
-                                        </li>
+                                        {services.map((s) => (
+                                            <li key={s.slug}>
+                                                <Link href={`/services/${s.slug}`}>
+                                                    {s.title}
+                                                </Link>
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                                 {/* Page Category List End */}
@@ -68,34 +88,43 @@ function page() {
                                     data-wow-delay="0.25s"
                                 >
                                     <div className="sidebar-cta-content-box">
+
                                         <div className="sidebar-cta-logo">
-                                            <img src="/images/logo.svg" alt="" />
+                                            <img src="/images/logo.svg" alt="Satyam Shivam Pest Control" />
                                         </div>
+
                                         <div className="sidebar-cta-content">
-                                            <h2>Let's Start Work Together</h2>
+                                            <h2>Need Pest Control Service?</h2>
+
                                             <ul>
                                                 <li>Mon - Sat: 9:00 AM - 7:00 PM</li>
-                                                <li>123 Greenway Avenue, Sector 45, India - 3815</li>
+                                                <li>Kanti Factory Road, Patna, Bihar - 800020</li>
                                                 <li>
-                                                    <a href="mailto:info@domainname.com">
-                                                        info@domainname.com
+                                                    <a href="mailto:satyamshivampestcontrol@gmail.com">
+                                                        satyamshivampestcontrol@gmail.com
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
+
                                         <div className="sidebar-cta-contact-item">
                                             <div className="icon-box">
-                                                <img src="/images/icon-headphone-primary.svg" alt="" />
+                                                <img src="/images/icon-headphone-primary.svg" alt="Call Pest Control" />
                                             </div>
+
                                             <div className="sidebar-cta-contact-content">
                                                 <h3>
-                                                    <a href="tel:+123456789">+(123) 456-789</a>
+                                                    <a href="tel:+917352671666">
+                                                        +91 7352671666
+                                                    </a>
                                                 </h3>
                                             </div>
                                         </div>
+
                                     </div>
+
                                     <div className="sidebar-cta-btn">
-                                        <a href="contact.html">Contact Us Today</a>
+                                        <a href="/contact-us">Book Service Now</a>
                                     </div>
                                 </div>
                                 {/* Sidebar CTA Box End */}
@@ -107,41 +136,34 @@ function page() {
                             <div className="service-single-content">
                                 {/* Page Single Image Start */}
                                 <div className="page-single-image">
-                                    <figure className="image-anime reveal">
-                                        <img src="/images/service-2.jpg" alt="" />
+                                    <figure className="image-anime">
+                                        <Image
+                                            key={service.slug}
+                                            src={service.image}
+                                            alt={service.title}
+                                            width={800}
+                                            height={500}
+                                            unoptimized
+                                            style={{ width: "100%", height: "auto" }}
+                                        />
                                     </figure>
                                 </div>
                                 {/* Page Single Image End */}
                                 {/* Service Entry Start */}
                                 <div className="service-entry">
                                     <p className="wow fadeInUp">
-                                        Pest infestations can pose serious risks to your health,
-                                        property, and peace of mind. Our professional pest control
-                                        services are designed to protect residential and commercial
-                                        spaces from a wide range of pests using safe, effective, and
-                                        long-lasting solutions. With years of industry experience, our
-                                        certified technicians deliver reliable pest management tailored
-                                        to your specific needs.
+                                        {service.content.intro}
                                     </p>
                                     <p className="wow fadeInUp" data-wow-delay="0.2s">
-                                        We use advanced inspection techniques to identify the source of
-                                        infestations and apply targeted treatments that eliminate pests
-                                        at all stages of their lifecycle. From common household pests
-                                        like cockroaches, ants, and mosquitoes to more complex problems
-                                        such as termites, rodents, and bed bugs, we provide
-                                        comprehensive pest control solutions that work.
+                                        {service.short}
                                     </p>
                                     {/* Service Entry Box Start */}
                                     <div className="service-info-box">
                                         <h2 className="text-anime-style-3">
-                                            Understanding bed bug infestations
+                                            {service.title} Details
                                         </h2>
                                         <p className="wow fadeInUp">
-                                            Bed bugs hide in mattresses, bed frames, sofas, curtains,
-                                            electrical sockets, and wall cracks. They multiply quickly and
-                                            are difficult to eliminate without professional treatment.
-                                            Early detection and expert intervention are crucial to avoid
-                                            widespread infestation.
+                                            {service.content.intro}
                                         </p>
                                         {/* Service Entry Image Content Start */}
                                         <div className="service-entry-image-content">
@@ -182,7 +204,7 @@ function page() {
                                             {/* Service Entry Item List End */}
                                             {/* Service Entry Image Start */}
                                             <div className="service-entry-image">
-                                                <figure className="image-anime reveal">
+                                                <figure className="image-anime">
                                                     <img src="/images/service-entry-image.jpg" alt="" />
                                                 </figure>
                                             </div>

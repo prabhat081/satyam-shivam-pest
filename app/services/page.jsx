@@ -1,10 +1,13 @@
 import { generateSEO } from "@/lib/seo";
+import services from "../../data/services.json";
+import Link from "next/link";
+import Faq from "@/components/Faq";
 
 export const metadata = generateSEO({
-  title: "Pest Control Services in Patna",
-  description:
-    "Get professional pest control services in Patna including termite, mosquito, cockroach, and rodent control with guaranteed results.",
-  path: "/services",
+    title: "Pest Control Services in Patna",
+    description:
+        "Get professional pest control services in Patna including termite, mosquito, cockroach, and rodent control with guaranteed results.",
+    path: "/services",
 });
 
 function page() {
@@ -41,254 +44,60 @@ function page() {
             <div className="page-services">
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-3 col-md-6">
-                            {/* Service Item Start */}
-                            <div className="service-item wow fadeInUp">
-                                <div className="service-item-header">
-                                    <div className="service-item-image">
-                                        <a href="service-single.html" data-cursor-text="View">
-                                            <figure className="image-anime">
-                                                <img src="images/service-1.jpg" alt="" />
-                                            </figure>
-                                        </a>
+                        {services.map((service, index) => (
+                            <div
+                                key={service.slug}
+                                className="col-xl-3 col-md-6"
+                            >
+                                <div
+                                    className="service-item wow fadeInUp"
+                                    data-wow-delay={`${index * 0.2}s`}
+                                >
+                                    <div className="service-item-header">
+                                        <div className="service-item-image">
+                                            <Link
+                                                href={`/services/${service.slug}`}
+                                                data-cursor-text="View"
+                                            >
+                                                <figure className="image-anime">
+                                                    <img
+                                                        src={service.image}
+                                                        alt={service.title}
+                                                    />
+                                                </figure>
+                                            </Link>
+                                        </div>
+
+                                        <div className="icon-box">
+                                            <img
+                                                src={service.icon}
+                                                alt={service.title}
+                                            />
+                                        </div>
                                     </div>
-                                    <div className="icon-box">
-                                        <img src="images/icon-service-1.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div className="service-item-body">
-                                    <div className="service-item-content">
-                                        <h2>
-                                            <a href="service-single.html">Residential Pest Control</a>
-                                        </h2>
-                                        <p>Complete home pest control solutions to eliminate termites, cockroaches, mosquitoes, and other common household pests safely and effectively.</p>
-                                    </div>
-                                    <div className="service-item-btn">
-                                        <a href="service-single.html" className="readmore-btn">
-                                            Learn More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Service Item End */}
-                        </div>
-                        <div className="col-xl-3 col-md-6">
-                            {/* Service Item Start */}
-                            <div className="service-item wow fadeInUp" data-wow-delay="0.2s">
-                                <div className="service-item-header">
-                                    <div className="service-item-image">
-                                        <a href="service-single.html" data-cursor-text="View">
-                                            <figure className="image-anime">
-                                                <img src="images/service-2.jpg" alt="" />
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div className="icon-box">
-                                        <img src="images/icon-service-2.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div className="service-item-body">
-                                    <div className="service-item-content">
-                                        <h2>
-                                            <a href="service-single.html">Bed Bug Treatment</a>
-                                        </h2>
-                                        <p>Advanced bed bug removal services using safe and proven methods to ensure complete elimination and long-term protection.</p>
-                                    </div>
-                                    <div className="service-item-btn">
-                                        <a href="service-single.html" className="readmore-btn">
-                                            Learn More
-                                        </a>
+
+                                    <div className="service-item-body">
+                                        <div className="service-item-content">
+                                            <h2>
+                                                <Link href={`/services/${service.slug}`}>
+                                                    {service.title}
+                                                </Link>
+                                            </h2>
+                                            <p>{service.short}</p>
+                                        </div>
+
+                                        <div className="service-item-btn">
+                                            <Link
+                                                href={`/services/${service.slug}`}
+                                                className="readmore-btn"
+                                            >
+                                                View Details
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            {/* Service Item End */}
-                        </div>
-                        <div className="col-xl-3 col-md-6">
-                            {/* Service Item Start */}
-                            <div className="service-item wow fadeInUp" data-wow-delay="0.4s">
-                                <div className="service-item-header">
-                                    <div className="service-item-image">
-                                        <a href="service-single.html" data-cursor-text="View">
-                                            <figure className="image-anime">
-                                                <img src="images/service-3.jpg" alt="" />
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div className="icon-box">
-                                        <img src="images/icon-service-3.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div className="service-item-body">
-                                    <div className="service-item-content">
-                                        <h2>
-                                            <a href="service-single.html">Cockroach &amp; Ant Control</a>
-                                        </h2>
-                                        <p>Effective treatment to remove cockroaches and ants from kitchens, bathrooms, and hidden areas with long-lasting results.</p>
-                                    </div>
-                                    <div className="service-item-btn">
-                                        <a href="service-single.html" className="readmore-btn">
-                                            Learn More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Service Item End */}
-                        </div>
-                        <div className="col-xl-3 col-md-6">
-                            {/* Service Item Start */}
-                            <div className="service-item wow fadeInUp" data-wow-delay="0.6s">
-                                <div className="service-item-header">
-                                    <div className="service-item-image">
-                                        <a href="service-single.html" data-cursor-text="View">
-                                            <figure className="image-anime">
-                                                <img src="images/service-4.jpg" alt="" />
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div className="icon-box">
-                                        <img src="images/icon-service-4.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div className="service-item-body">
-                                    <div className="service-item-content">
-                                        <h2>
-                                            <a href="service-single.html">Termite Control</a>
-                                        </h2>
-                                        <p>Protect your property from termite damage with our professional anti-termite treatment and preventive solutions.</p>
-                                    </div>
-                                    <div className="service-item-btn">
-                                        <a href="service-single.html" className="readmore-btn">
-                                            Learn More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Service Item End */}
-                        </div>
-                        <div className="col-xl-3 col-md-6">
-                            {/* Service Item Start */}
-                            <div className="service-item wow fadeInUp">
-                                <div className="service-item-header">
-                                    <div className="service-item-image">
-                                        <a href="service-single.html" data-cursor-text="View">
-                                            <figure className="image-anime">
-                                                <img src="images/service-5.jpg" alt="" />
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div className="icon-box">
-                                        <img src="images/icon-service-5.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div className="service-item-body">
-                                    <div className="service-item-content">
-                                        <h2>
-                                            <a href="service-single.html">Rodent Control</a>
-                                        </h2>
-                                        <p>Safe and effective rat and mouse control services to protect your home and business from health risks and damage.</p>
-                                    </div>
-                                    <div className="service-item-btn">
-                                        <a href="service-single.html" className="readmore-btn">
-                                            Learn More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Service Item End */}
-                        </div>
-                        <div className="col-xl-3 col-md-6">
-                            {/* Service Item Start */}
-                            <div className="service-item wow fadeInUp" data-wow-delay="0.2s">
-                                <div className="service-item-header">
-                                    <div className="service-item-image">
-                                        <a href="service-single.html" data-cursor-text="View">
-                                            <figure className="image-anime">
-                                                <img src="images/service-6.jpg" alt="" />
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div className="icon-box">
-                                        <img src="images/icon-service-6.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div className="service-item-body">
-                                    <div className="service-item-content">
-                                        <h2>
-                                            <a href="service-single.html">General Pest Control</a>
-                                        </h2>
-                                        <p>Comprehensive pest control solutions for all types of pests using eco-friendly and modern treatment techniques.</p>
-                                    </div>
-                                    <div className="service-item-btn">
-                                        <a href="service-single.html" className="readmore-btn">
-                                            Learn More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Service Item End */}
-                        </div>
-                        <div className="col-xl-3 col-md-6">
-                            {/* Service Item Start */}
-                            <div className="service-item wow fadeInUp" data-wow-delay="0.4s">
-                                <div className="service-item-header">
-                                    <div className="service-item-image">
-                                        <a href="service-single.html" data-cursor-text="View">
-                                            <figure className="image-anime">
-                                                <img src="images/service-7.jpg" alt="" />
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div className="icon-box">
-                                        <img src="images/icon-service-7.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div className="service-item-body">
-                                    <div className="service-item-content">
-                                        <h2>
-                                            <a href="service-single.html">Mosquito Control</a>
-                                        </h2>
-                                        <p>Reduce mosquito breeding and protect your family from diseases with our effective mosquito control treatments.</p>
-                                    </div>
-                                    <div className="service-item-btn">
-                                        <a href="service-single.html" className="readmore-btn">
-                                            Learn More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Service Item End */}
-                        </div>
-                        <div className="col-xl-3 col-md-6">
-                            {/* Service Item Start */}
-                            <div className="service-item wow fadeInUp" data-wow-delay="0.6s">
-                                <div className="service-item-header">
-                                    <div className="service-item-image">
-                                        <a href="service-single.html" data-cursor-text="View">
-                                            <figure className="image-anime">
-                                                <img src="images/service-8.jpg" alt="" />
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div className="icon-box">
-                                        <img src="images/icon-service-8.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div className="service-item-body">
-                                    <div className="service-item-content">
-                                        <h2>
-                                            <a href="service-single.html">Spider Control</a>
-                                        </h2>
-                                        <p>Eliminate spiders and prevent re-infestation with safe and professional spider control services.</p>
-                                    </div>
-                                    <div className="service-item-btn">
-                                        <a href="service-single.html" className="readmore-btn">
-                                            Learn More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Service Item End */}
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
@@ -836,283 +645,8 @@ function page() {
             </div>
             {/* Our Testimonials Section End */}
             {/* Our Faqs Section Start */}
-            <div className="our-faqs">
-                <div className="container">
-                    <div className="row section-row align-items-center">
-                        <div className="col-xl-6">
-                            {/* Section Title Start */}
-                            <div className="section-title">
-                                <span className="section-sub-title wow fadeInUp">
-                                    Frequently Asked Questions
-                                </span>
-                                <h2 className="text-anime-style-3" data-cursor="-opaque">
-                                    Helpful information to guide your pest control decision
-                                </h2>
-                            </div>
-                            {/* Section Title End */}
-                        </div>
-                        <div className="col-xl-6">
-                            {/* Section Content Button Start */}
-                            <div className="section-content-btn">
-                                {/* Section Title Content Start */}
-                                <div
-                                    className="section-title-content wow fadeInUp"
-                                    data-wow-delay="0.2s"
-                                >
-                                    <p>
-                                        Yes, we use eco-friendly and government-approved pest control
-                                        chemicals that are safe for children, pets, and the environment
-                                        our treatments are carefully selected to effectively eliminate
-                                        pests.
-                                    </p>
-                                </div>
-                                {/* Section Title Content End */}
-                                {/* Section Button Start */}
-                                <div className="section-btn wow fadeInUp" data-wow-delay="0.4s">
-                                    <a href="faqs.html" className="btn-default">
-                                        View all FAQ's
-                                    </a>
-                                </div>
-                                {/* Section Button End */}
-                            </div>
-                            {/* Section Content Button End */}
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-xl-5">
-                            {/* Faq Image Box Start */}
-                            <div className="faq-image-box wow fadeInUp">
-                                {/* Faq Image Start */}
-                                <div className="faq-image">
-                                    <figure className="image-anime">
-                                        <img src="images/faq-image.jpg" alt="" />
-                                    </figure>
-                                </div>
-                                {/* Faq Image End */}
-                                {/* Faq Client Box Start */}
-                                <div className="faq-client-box">
-                                    {/* Faq Client Box Header Start */}
-                                    <div className="faq-client-box-header">
-                                        {/* Satisfy Client Images Start */}
-                                        <div className="satisfy-client-images">
-                                            <div className="satisfy-client-image">
-                                                <figure className="image-anime">
-                                                    <img src="images/author-1.jpg" alt="" />
-                                                </figure>
-                                            </div>
-                                            <div className="satisfy-client-image">
-                                                <figure className="image-anime">
-                                                    <img src="images/author-2.jpg" alt="" />
-                                                </figure>
-                                            </div>
-                                            <div className="satisfy-client-image">
-                                                <figure className="image-anime">
-                                                    <img src="images/author-3.jpg" alt="" />
-                                                </figure>
-                                            </div>
-                                            <div className="satisfy-client-image">
-                                                <figure className="image-anime">
-                                                    <img src="images/author-4.jpg" alt="" />
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        {/* Satisfy Client Images End */}
-                                        {/* Faq Client Box Rating Start */}
-                                        <div className="faq-client-box-rating">
-                                            <h2>
-                                                <span className="counter">20</span>k+
-                                            </h2>
-                                        </div>
-                                        {/* Faq Client Box Rating End */}
-                                    </div>
-                                    {/* Faq Client Box Header End */}
-                                    {/* Faq Client Box Body Start */}
-                                    <div className="faq-client-box-body">
-                                        <p>
-                                            The Preferred Pest Control Partner for 5,000+ Homes &amp;
-                                            Businesses
-                                        </p>
-                                    </div>
-                                    {/* Faq Client Box Body End */}
-                                </div>
-                                {/* Faq Client Box End */}
-                            </div>
-                            {/* Faq Image Box End */}
-                        </div>
-                        <div className="col-xl-7">
-                            {/* FAQ Accordion Start */}
-                            <div className="faq-accordion" id="accordion">
-                                {/* FAQ Item Start */}
-                                <div className="accordion-item wow fadeInUp">
-                                    <h2 className="accordion-header" id="heading1">
-                                        <button
-                                            className="accordion-button"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapse1"
-                                            aria-expanded="true"
-                                            aria-controls="collapse1"
-                                        >
-                                            1. Do you use eco-friendly and approved pest control
-                                            chemicals?
-                                        </button>
-                                    </h2>
-                                    <div
-                                        id="collapse1"
-                                        className="accordion-collapse collapse show"
-                                        role="region"
-                                        aria-labelledby="heading1"
-                                        data-bs-parent="#accordion"
-                                    >
-                                        <div className="accordion-body">
-                                            <p>
-                                                Yes, we use eco-friendly and government-approved pest
-                                                control chemicals that are safe for children, pets, and the
-                                                environment our treatments are carefully selected to
-                                                effectively eliminate pests.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* FAQ Item End */}
-                                {/* FAQ Item Start */}
-                                <div className="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-                                    <h2 className="accordion-header" id="heading2">
-                                        <button
-                                            className="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapse2"
-                                            aria-expanded="false"
-                                            aria-controls="collapse2"
-                                        >
-                                            2. How often should pest control services be scheduled
-                                            annually?
-                                        </button>
-                                    </h2>
-                                    <div
-                                        id="collapse2"
-                                        className="accordion-collapse collapse"
-                                        role="region"
-                                        aria-labelledby="heading2"
-                                        data-bs-parent="#accordion"
-                                    >
-                                        <div className="accordion-body">
-                                            <p>
-                                                Yes, we use eco-friendly and government-approved pest
-                                                control chemicals that are safe for children, pets, and the
-                                                environment our treatments are carefully selected to
-                                                effectively eliminate pests.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* FAQ Item End */}
-                                {/* FAQ Item Start */}
-                                <div className="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-                                    <h2 className="accordion-header" id="heading3">
-                                        <button
-                                            className="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapse3"
-                                            aria-expanded="false"
-                                            aria-controls="collapse3"
-                                        >
-                                            3. What preparation is required before starting pest control
-                                            treatment?
-                                        </button>
-                                    </h2>
-                                    <div
-                                        id="collapse3"
-                                        className="accordion-collapse collapse"
-                                        role="region"
-                                        aria-labelledby="heading3"
-                                        data-bs-parent="#accordion"
-                                    >
-                                        <div className="accordion-body">
-                                            <p>
-                                                Yes, we use eco-friendly and government-approved pest
-                                                control chemicals that are safe for children, pets, and the
-                                                environment our treatments are carefully selected to
-                                                effectively eliminate pests.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* FAQ Item End */}
-                                {/* FAQ Item Start */}
-                                <div className="accordion-item wow fadeInUp" data-wow-delay="0.6s">
-                                    <h2 className="accordion-header" id="heading4">
-                                        <button
-                                            className="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapse4"
-                                            aria-expanded="false"
-                                            aria-controls="collapse4"
-                                        >
-                                            4. Do you offer follow-up inspections after pest treatment
-                                            completion?
-                                        </button>
-                                    </h2>
-                                    <div
-                                        id="collapse4"
-                                        className="accordion-collapse collapse"
-                                        role="region"
-                                        aria-labelledby="heading4"
-                                        data-bs-parent="#accordion"
-                                    >
-                                        <div className="accordion-body">
-                                            <p>
-                                                Yes, we use eco-friendly and government-approved pest
-                                                control chemicals that are safe for children, pets, and the
-                                                environment our treatments are carefully selected to
-                                                effectively eliminate pests.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* FAQ Item End */}
-                                {/* FAQ Item Start */}
-                                <div className="accordion-item wow fadeInUp" data-wow-delay="0.8s">
-                                    <h2 className="accordion-header" id="heading5">
-                                        <button
-                                            className="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapse5"
-                                            aria-expanded="false"
-                                            aria-controls="collapse5"
-                                        >
-                                            5. Can pests return after completing the pest control
-                                            treatment?
-                                        </button>
-                                    </h2>
-                                    <div
-                                        id="collapse5"
-                                        className="accordion-collapse collapse"
-                                        role="region"
-                                        aria-labelledby="heading5"
-                                        data-bs-parent="#accordion"
-                                    >
-                                        <div className="accordion-body">
-                                            <p>
-                                                Yes, we use eco-friendly and government-approved pest
-                                                control chemicals that are safe for children, pets, and the
-                                                environment our treatments are carefully selected to
-                                                effectively eliminate pests.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* FAQ Item End */}
-                            </div>
-                            {/* FAQ Accordion End */}
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Faq />
+
         </>
 
     )

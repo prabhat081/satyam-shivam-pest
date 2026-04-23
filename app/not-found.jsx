@@ -37,7 +37,7 @@ function NotFound() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="error-page-image wow fadeInUp">
-                                <img src="images/404-error-img.png" alt="" />
+                                <img src="/images/404-error-img.png" alt="" />
                             </div>
                             <div className="error-page-content">
                                 <div className="section-title">

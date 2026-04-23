@@ -1,0 +1,332 @@
+[
+  {
+    "slug": "residential-pest-control",
+    "title": "Residential Pest Control in Patna",
+    "short": "Complete home pest control solutions for all household pests.",
+    "image": "/images/service-1.jpg",
+    "icon": "/images/icon-service-1.svg",
+    "seo": {
+      "title": "Residential Pest Control in Patna | Home Pest Solutions",
+      "description": "Safe and effective residential pest control services in Patna for termites, cockroaches, mosquitoes and more."
+    },
+    "hero": {
+      "subtitle": "Home Pest Control Experts",
+      "title": "Complete Residential Pest Control Services",
+      "description": "Protect your home with eco-friendly pest control solutions."
+    },
+    "content": {
+      "intro": "We provide complete home pest control services to eliminate all types of pests.",
+      "points": [
+        "Safe for family & pets",
+        "Eco-friendly treatments",
+        "Long-term protection",
+        "Quick service"
+      ]
+    },
+    "features": [
+      { "title": "Safe Treatment", "desc": "Child-safe eco-friendly solutions." },
+      { "title": "Expert Team", "desc": "Certified professionals." },
+      { "title": "Fast Service", "desc": "Same-day service available." }
+    ],
+    "process": [
+      { "step": "01", "title": "Inspection", "desc": "Identify pest problem." },
+      { "step": "02", "title": "Treatment", "desc": "Apply safe treatment." },
+      { "step": "03", "title": "Prevention", "desc": "Avoid future infestation." }
+    ],
+    "faq": [
+      { "q": "Is it safe for kids?", "a": "Yes, completely safe." },
+      { "q": "How often needed?", "a": "Every 3–6 months." }
+    ],
+    "cta": {
+      "title": "Need Home Pest Control?",
+      "desc": "Book your service today.",
+      "button": "Book Now"
+    }
+  },
+
+  {
+    "slug": "bed-bug-treatment",
+    "title": "Bed Bug Treatment in Patna",
+    "short": "Advanced bed bug removal services.",
+    "image": "/images/service-2.jpg",
+    "icon": "/images/icon-service-2.svg",
+    "seo": {
+      "title": "Bed Bug Treatment in Patna",
+      "description": "Complete bed bug removal services."
+    },
+    "hero": {
+      "subtitle": "Bed Bug Experts",
+      "title": "Complete Bed Bug Removal Services",
+      "description": "Eliminate bed bugs permanently."
+    },
+    "content": {
+      "intro": "We provide safe and effective bed bug removal.",
+      "points": [
+        "Complete elimination",
+        "Safe chemicals",
+        "Quick service",
+        "Follow-up support"
+      ]
+    },
+    "features": [
+      { "title": "Safe Methods", "desc": "Eco-friendly solutions." },
+      { "title": "Advanced Tools", "desc": "Modern detection." },
+      { "title": "Guaranteed Results", "desc": "Long-term protection." }
+    ],
+    "process": [
+      { "step": "01", "title": "Inspection", "desc": "Find infestation." },
+      { "step": "02", "title": "Treatment", "desc": "Apply solution." },
+      { "step": "03", "title": "Follow-up", "desc": "Ensure removal." }
+    ],
+    "faq": [
+      { "q": "Safe treatment?", "a": "Yes." },
+      { "q": "Time required?", "a": "2–4 hours." }
+    ],
+    "cta": {
+      "title": "Remove Bed Bugs Today",
+      "desc": "Get expert help now.",
+      "button": "Book Service"
+    }
+  },
+
+  {
+    "slug": "cockroach-ant-control",
+    "title": "Cockroach & Ant Control in Patna",
+    "short": "Remove cockroaches and ants effectively.",
+    "image": "/images/service-3.jpg",
+    "icon": "/images/icon-service-3.svg",
+    "seo": {
+      "title": "Cockroach Control in Patna",
+      "description": "Effective cockroach and ant removal."
+    },
+    "hero": {
+      "subtitle": "Cockroach Experts",
+      "title": "Get Rid of Cockroaches & Ants",
+      "description": "Safe and effective pest removal."
+    },
+    "content": {
+      "intro": "We eliminate cockroaches and ants completely.",
+      "points": [
+        "Kitchen-safe",
+        "Odorless solution",
+        "Quick results"
+      ]
+    },
+    "features": [
+      { "title": "Safe Treatment", "desc": "Food-safe chemicals." },
+      { "title": "Fast Results", "desc": "Immediate effect." }
+    ],
+    "process": [
+      { "step": "01", "title": "Inspection", "desc": "Check infestation." },
+      { "step": "02", "title": "Treatment", "desc": "Apply solution." },
+      { "step": "03", "title": "Prevention", "desc": "Stop recurrence." }
+    ],
+    "faq": [
+      { "q": "Safe for kitchen?", "a": "Yes." }
+    ],
+    "cta": {
+      "title": "Remove Cockroaches Now",
+      "desc": "Book pest control service.",
+      "button": "Book Now"
+    }
+  },
+
+  {
+    "slug": "termite-control",
+    "title": "Termite Control in Patna",
+    "short": "Protect your home from termite damage.",
+    "image": "/images/service-4.jpg",
+    "icon": "/images/icon-service-4.svg",
+    "seo": {
+      "title": "Termite Control in Patna",
+      "description": "Professional anti-termite treatment."
+    },
+    "hero": {
+      "subtitle": "Termite Experts",
+      "title": "Protect Your Property",
+      "description": "Advanced termite solutions."
+    },
+    "content": {
+      "intro": "Protect your property from termites.",
+      "points": [
+        "Long-term protection",
+        "Certified chemicals",
+        "Affordable service"
+      ]
+    },
+    "features": [
+      { "title": "Advanced Treatment", "desc": "Latest tech." },
+      { "title": "Safe Chemicals", "desc": "Approved solutions." }
+    ],
+    "process": [
+      { "step": "01", "title": "Inspection", "desc": "Detect termites." },
+      { "step": "02", "title": "Treatment", "desc": "Apply chemicals." },
+      { "step": "03", "title": "Protection", "desc": "Prevent damage." }
+    ],
+    "faq": [
+      { "q": "How long lasts?", "a": "Several years." }
+    ],
+    "cta": {
+      "title": "Protect Your Home",
+      "desc": "Book termite service.",
+      "button": "Get Inspection"
+    }
+  },
+
+  {
+    "slug": "rodent-control",
+    "title": "Rodent Control in Patna",
+    "short": "Effective rat and mouse control.",
+    "image": "/images/service-5.jpg",
+    "icon": "/images/icon-service-5.svg",
+    "seo": {
+      "title": "Rodent Control in Patna",
+      "description": "Remove rats and mice safely."
+    },
+    "hero": {
+      "subtitle": "Rodent Experts",
+      "title": "Eliminate Rats & Mice",
+      "description": "Safe rodent removal."
+    },
+    "content": {
+      "intro": "Protect your home from rodents.",
+      "points": [
+        "Safe methods",
+        "Quick removal",
+        "Long-term prevention"
+      ]
+    },
+    "features": [
+      { "title": "Safe Traps", "desc": "No harmful chemicals." }
+    ],
+    "process": [
+      { "step": "01", "title": "Inspection", "desc": "Locate rodents." },
+      { "step": "02", "title": "Removal", "desc": "Eliminate pests." }
+    ],
+    "faq": [
+      { "q": "Is it safe?", "a": "Yes." }
+    ],
+    "cta": {
+      "title": "Remove Rodents",
+      "desc": "Book service now.",
+      "button": "Book Now"
+    }
+  },
+
+  {
+    "slug": "general-pest-control",
+    "title": "General Pest Control in Patna",
+    "short": "Complete pest control solutions.",
+    "image": "/images/service-6.jpg",
+    "icon": "/images/icon-service-6.svg",
+    "seo": {
+      "title": "General Pest Control in Patna",
+      "description": "All pest solutions."
+    },
+    "hero": {
+      "subtitle": "General Pest Experts",
+      "title": "Complete Pest Control Services",
+      "description": "Protect from all pests."
+    },
+    "content": {
+      "intro": "We handle all pest problems.",
+      "points": [
+        "Eco-friendly",
+        "Safe treatment",
+        "Affordable pricing"
+      ]
+    },
+    "features": [
+      { "title": "All-in-One", "desc": "Covers all pests." }
+    ],
+    "process": [
+      { "step": "01", "title": "Inspection", "desc": "Identify pests." }
+    ],
+    "faq": [
+      { "q": "Do you cover all?", "a": "Yes." }
+    ],
+    "cta": {
+      "title": "Need Pest Control?",
+      "desc": "Contact now.",
+      "button": "Book Service"
+    }
+  },
+
+  {
+    "slug": "mosquito-control",
+    "title": "Mosquito Control in Patna",
+    "short": "Protect your family from mosquito diseases.",
+    "image": "/images/service-7.jpg",
+    "icon": "/images/icon-service-7.svg",
+    "seo": {
+      "title": "Mosquito Control in Patna",
+      "description": "Effective mosquito treatment."
+    },
+    "hero": {
+      "subtitle": "Mosquito Experts",
+      "title": "Stop Mosquito Breeding",
+      "description": "Protect from diseases."
+    },
+    "content": {
+      "intro": "Effective mosquito control services.",
+      "points": [
+        "Reduce breeding",
+        "Safe treatment",
+        "Quick results"
+      ]
+    },
+    "features": [
+      { "title": "Fogging Service", "desc": "Effective removal." }
+    ],
+    "process": [
+      { "step": "01", "title": "Inspection", "desc": "Check breeding." }
+    ],
+    "faq": [
+      { "q": "Is it effective?", "a": "Yes." }
+    ],
+    "cta": {
+      "title": "Control Mosquitoes",
+      "desc": "Book service.",
+      "button": "Book Now"
+    }
+  },
+
+  {
+    "slug": "spider-control",
+    "title": "Spider Control in Patna",
+    "short": "Safe spider removal services.",
+    "image": "/images/service-8.jpg",
+    "icon": "/images/icon-service-8.svg",
+    "seo": {
+      "title": "Spider Control in Patna",
+      "description": "Professional spider removal."
+    },
+    "hero": {
+      "subtitle": "Spider Control Experts",
+      "title": "Eliminate Spiders Safely",
+      "description": "Professional spider removal."
+    },
+    "content": {
+      "intro": "We remove spiders and prevent recurrence.",
+      "points": [
+        "Safe removal",
+        "Prevent infestation",
+        "Quick service"
+      ]
+    },
+    "features": [
+      { "title": "Safe Methods", "desc": "Eco-friendly." }
+    ],
+    "process": [
+      { "step": "01", "title": "Inspection", "desc": "Find spiders." }
+    ],
+    "faq": [
+      { "q": "Safe treatment?", "a": "Yes." }
+    ],
+    "cta": {
+      "title": "Remove Spiders",
+      "desc": "Book service.",
+      "button": "Book Now"
+    }
+  }
+]

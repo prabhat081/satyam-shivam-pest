@@ -22,7 +22,7 @@ export default function Loader() {
             <div className="loading-container">
                 <div className="loading" />
                 <div id="loading-icon">
-                    <img src="/images/loader.svg" alt="" />
+                    <img src="/images/icon.png" alt="" />
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
-import React from 'react'
-
+import services from "@/data/services.json";
+import Link from "next/link";
 function Footer() {
     return (
         <footer className="main-footer bg-section dark-section">
@@ -19,7 +19,7 @@ function Footer() {
                             {/* Footer Social links Start */}
                             <div className="footer-social-links">
                                 <ul>
-                                    <li>
+                                    {/* <li>
                                         <a href="#">
                                             <i className="fa-brands fa-pinterest-p" />
                                         </a>
@@ -28,14 +28,14 @@ function Footer() {
                                         <a href="#">
                                             <i className="fa-brands fa-x-twitter" />
                                         </a>
-                                    </li>
+                                    </li> */}
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.facebook.com/p/Satyam-shivam-pest-control-100086722754163/" target="__blank">
                                             <i className="fa-brands fa-facebook-f" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.instagram.com/satyam_shivam_pest_control/?igsh=Mm84Nzl4b3lvNW0w" target="__blank">
                                             <i className="fa-brands fa-instagram" />
                                         </a>
                                     </li>
@@ -53,19 +53,22 @@ function Footer() {
                                 <h3>Quick Links</h3>
                                 <ul>
                                     <li>
-                                        <a href="index.html">Home</a>
+                                        <a href="/">Home</a>
                                     </li>
                                     <li>
-                                        <a href="about.html">About Us</a>
+                                        <a href="/about-us">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="services.html">Our Services</a>
+                                        <a href="/services">Our Services</a>
                                     </li>
                                     <li>
-                                        <a href="projects.html">Our Projects</a>
+                                        <a href="/gallery">Gallery</a>
                                     </li>
                                     <li>
-                                        <a href="pricing.html">Pricing Plans</a>
+                                        <a href="/teams">Teams</a>
+                                    </li>
+                                    <li>
+                                        <a href="/contact-us">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -74,21 +77,13 @@ function Footer() {
                             <div className="footer-links footer-service-links">
                                 <h3>Our Services</h3>
                                 <ul>
-                                    <li>
-                                        <a href="service-single.html">Residential Pest Control</a>
-                                    </li>
-                                    <li>
-                                        <a href="service-single.html">Bed Bug Treatment</a>
-                                    </li>
-                                    <li>
-                                        <a href="service-single.html">Commercial Pest Control</a>
-                                    </li>
-                                    <li>
-                                        <a href="service-single.html">Cockroach &amp; Ant Control</a>
-                                    </li>
-                                    <li>
-                                        <a href="service-single.html">Mosquito Control</a>
-                                    </li>
+                                    {services.map((service, index) => (
+                                        <li key={index}>
+                                            <Link href={`/services/${service.slug}`}>
+                                                {service.title}
+                                            </Link>
+                                        </li>))}
+
                                 </ul>
                             </div>
                             {/* Footer Links End */}
