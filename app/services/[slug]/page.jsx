@@ -90,7 +90,7 @@ async function page({ params }) {
                                     <div className="sidebar-cta-content-box">
 
                                         <div className="sidebar-cta-logo">
-                                            <img src="/images/logo.svg" alt="Satyam Shivam Pest Control" />
+                                            <img src="/images/logo.png" alt="Satyam Shivam Pest Control" className='rounded' />
                                         </div>
 
                                         <div className="sidebar-cta-content">
